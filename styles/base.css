@@ -39,7 +39,7 @@ nav{
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }
-a{
+nav a{
   text-decoration: none;
   color: var(--color-primary);
   padding: 2em;
@@ -69,4 +69,15 @@ h1#my-name{
   padding: 1em;
   background-color: var(--color-primary);
   color: var(--color-secondary);
+}
+.card a{
+  text-decoration: none;
+  color: var(--color-secondary);  
+  padding: 0.5em;
+  display: block;
+}
+.card a:hover{
+  color: var(--color-primary);
+  background-color: var(--color-dark);
+  transition: 0.3s;
 }
