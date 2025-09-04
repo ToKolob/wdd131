@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+:root {
+  --color-primary: #fff;
+  --color-secondary: #000;
+  --color-light: #aaa;
+  --color-dark: #333;
+  --font-stilistic: 'Michroma', sans-serif;
+  --font-body: arial, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: normal;  
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-stilistic);
+  font-weight: 400;
+  font-style: normal;
+}
+span, header{
+  display: block;
+  text-align: center;
+}
+span{
+  font-size: 1em;
+  padding: 1em;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-family: var(--font-stilistic);
+}
+nav{
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+a{
+  text-decoration: none;
+  color: var(--color-primary);
+  padding: 2em;
+  font-family: var(--font-stilistic);
+}
+a:hover{
+  background-color: var(--color-light);
+  color: var(--color-secondary);
+  transition: 0.3s;
+}
+main{
+  max-width: 900px;      
+  margin: auto;      
+  padding: 1em;          
+  background: var(--color-primary); 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+h1#my-name{
+  grid-column: 1/3;
+  text-align: center;
+  color: var(--color-dark);
+}
+.card{
+  border: 1px solid var(--color-secondary);
+  margin: 1em;
+  padding: 1em;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
