@@ -1,13 +1,11 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:wght@400;700&display=swap');
 :root {
   --color-primary: #fff;
   --color-secondary: #000;
   --color-light: #aaa;
   --color-dark: #333;
   --font-stilistic: 'Michroma', sans-serif;
-  --font-body: arial, sans-serif;
+  --font-body: 'Roboto', arial, sans-serif;
 }
 * {
   margin: 0;
