@@ -84,10 +84,10 @@ h1#my-name{
 .card img{
   max-width: 100%;
   height: auto;
+  padding: 1em 0;
 }
 p{
   line-height: 1.6;
-  margin-top: 1em;
   color: var(--color-dark);
-  padding: 0.5em;
+  padding: 1em 0;
 }
