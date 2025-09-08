@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human-Compatible AI: Building a Future We Can Trust</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+      body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #18181b;
+      color: #fff;  
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      }
+
+      .gradient-bg {
+      background: #18181b;
+      }
+
+      .circuit-pattern {
+      background-image: none;
+      }
+
+      .glass-effect {
+      background: #23232a;
+      backdrop-filter: none;
+      border: 1px solid #27272a;
+      }
+
+      .ai-brain {
+      position: relative;
+      display: inline-block;
+      }
+
+      .ai-brain::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120%;
+      height: 120%;
+      border: 2px dashed #52525b;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+      0% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+      50% { opacity: 0.5; transform: translate(-50%, -50%) scale(1.1); }
+      100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+      }
+
+      .path-arrow {
+      position: relative;
+      }
+
+      .path-arrow::after {
+      content: '';
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: 15px solid;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      }
+
+      .warning-path::after {
+      border-left-color: #ef4444;
+      }
+
+      .safe-path::after {
+      border-left-color: #10b981;
+      }
+
+      .balance-scale {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      }
+
+      .scale-beam {
+      width: 100px;
+      height: 3px;
+      background: #52525b;
+      position: relative;
+      }
+
+      .scale-pan {
+      width: 30px;
+      height: 20px;
+      border: 2px solid #52525b;
+      border-radius: 0 0 15px 15px;
+      position: absolute;
+      top: -10px;
+      }
+
+      .scale-pan.left {
+      left: -15px;
+      }
+
+      .scale-pan.right {
+      right: -15px;
+      }
+
+      .diverging-roads {
+      position: relative;
+      height: 80px;
+      margin: 20px 0;
+      }
+
+      .road {
+      position: absolute;
+      height: 6px;
+      background: #52525b;
+      transform-origin: left center;
+      }
+
+      .road.safe {
+      background: #10b981;
+      width: 120px;
+      transform: rotate(-15deg);
+      top: 30%;
+      }
+
+      .road.danger {
+      background: #ef4444;
+      width: 120px;
+      transform: rotate(15deg);
+      top: 70%;
+      }
+
+      .collaboration-icon {
+      animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      }
+
+      .section-divider {
+      height: 2px;
+      background: #27272a;
+      margin: 40px 0;
+      }
+    </style>
+</head>
+<body class="gradient-bg circuit-pattern">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-white mb-4 leading-tight">
+                Human-Compatible AI:<br>
+                <span class="text-yellow-300">Building a Future We Can Trust</span>
+            </h1>
+            <div class="ai-brain inline-block">
+                <i class="fas fa-brain text-6xl text-blue-300"></i>
+            </div>
+        </div>
+
+        <!-- What is AI Section -->
+        <div class="glass-effect rounded-2xl p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-blue-500 rounded-full p-3 mr-4">
+                    <i class="fas fa-robot text-white text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-white">What is AI?</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-microchip text-4xl text-blue-300 mb-3"></i>
+                    <p class="text-white text-lg">Machines that learn and make decisions</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-lightning-bolt text-4xl text-yellow-300 mb-3"></i>
+                    <p class="text-white text-lg">Can solve problems faster than humans</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-globe text-4xl text-green-300 mb-3"></i>
+                    <p class="text-white text-lg">Already shaping health, transport, and education</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Big Question Section -->
+        <div class="glass-effect rounded-2xl p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-purple-500 rounded-full p-3 mr-4">
+                    <i class="fas fa-question-circle text-white text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-white">The Big Question</h2>
+            </div>
+            
+            <div class="text-center">
+                <div class="balance-scale mb-6">
+                    <div class="scale-beam">
+                        <div class="scale-pan left"></div>
+                        <div class="scale-pan right"></div>
+                    </div>
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4">
+                        <i class="fas fa-balance-scale text-3xl text-gray-300"></i>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <i class="fas fa-heart text-3xl text-red-300 mb-3"></i>
+                        <p class="text-white text-lg">Will AI always act in our best interest?</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-handshake text-3xl text-blue-300 mb-3"></i>
+                        <p class="text-white text-lg">Can we build systems that understand human values?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Two Paths Section -->
+        <div class="glass-effect rounded-2xl p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-orange-500 rounded-full p-3 mr-4">
+                    <i class="fas fa-code-branch text-white text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-white">Two Paths</h2>
+            </div>
+            
+            <div class="diverging-roads mb-6">
+                <div class="road safe"></div>
+                <div class="road danger"></div>
+                <div class="absolute left-0 top-1/2 transform -translate-y-1/2">
+                    <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Unaligned AI -->
+                <div class="bg-red-500 bg-opacity-20 rounded-xl p-6 border-2 border-red-400">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-exclamation-triangle text-red-400 text-2xl mr-3"></i>
+                        <h3 class="text-2xl font-bold text-white">Unaligned AI</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center path-arrow warning-path">
+                            <i class="fas fa-skull-crossbones text-red-400 mr-3"></i>
+                            <p class="text-white">Makes harmful choices</p>
+                        </div>
+                        <div class="flex items-center path-arrow warning-path">
+                            <i class="fas fa-ban text-red-400 mr-3"></i>
+                            <p class="text-white">Acts without human ethics</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-radiation text-red-400 mr-3"></i>
+                            <p class="text-white">Poses risks to society</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Human-Compatible AI -->
+                <div class="bg-green-500 bg-opacity-20 rounded-xl p-6 border-2 border-green-400">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-check-circle text-green-400 text-2xl mr-3"></i>
+                        <h3 class="text-2xl font-bold text-white">Human-Compatible AI</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center path-arrow safe-path">
+                            <i class="fas fa-eye text-green-400 mr-3"></i>
+                            <p class="text-white">Transparent and safe</p>
+                        </div>
+                        <div class="flex items-center path-arrow safe-path">
+                            <i class="fas fa-heart text-green-400 mr-3"></i>
+                            <p class="text-white">Respects human values</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-users text-green-400 mr-3"></i>
+                            <p class="text-white">Designed for collaboration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future Impact Section -->
+        <div class="glass-effect rounded-2xl p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-indigo-500 rounded-full p-3 mr-4">
+                    <i class="fas fa-rocket text-white text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-white">Future Impact</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Benefits -->
+                <div class="bg-gradient-to-br from-green-400 to-blue-500 bg-opacity-20 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-300 text-2xl mr-3"></i>
+                        <h3 class="text-2xl font-bold text-white">Benefits</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt text-green-300 mr-3"></i>
+                            <p class="text-white">Safer technology</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-hospital text-blue-300 mr-3"></i>
+                            <p class="text-white">Better healthcare, smarter cities</p>
+                        </div>
+                        <div class="flex items-center collaboration-icon">
+                            <i class="fas fa-handshake text-purple-300 mr-3"></i>
+                            <p class="text-white">AI that works with people</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Challenges -->
+                <div class="bg-gradient-to-br from-orange-400 to-red-500 bg-opacity-20 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-exclamation-circle text-orange-300 text-2xl mr-3"></i>
+                        <h3 class="text-2xl font-bold text-white">Challenges</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-briefcase text-orange-300 mr-3"></i>
+                            <p class="text-white">Job loss risks</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-user-secret text-red-300 mr-3"></i>
+                            <p class="text-white">Privacy concerns</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-gavel text-yellow-300 mr-3"></i>
+                            <p class="text-white">Need for strong rules & ethics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visual Metaphors Section -->
+        <div class="glass-effect rounded-2xl p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-pink-500 rounded-full p-3 mr-4">
+                    <i class="fas fa-palette text-white text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-white">Key Concepts</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="ai-brain mb-3">
+                        <i class="fas fa-brain text-5xl text-blue-300"></i>
+                    </div>
+                    <p class="text-white text-sm">AI Intelligence<br><span class="text-blue-200">Brain made of circuits</span></p>
+                </div>
+                
+                <div>
+                    <div class="mb-3 relative">
+                        <i class="fas fa-hand-paper text-5xl text-orange-300"></i>
+                        <i class="fas fa-cog text-2xl text-gray-300 absolute -top-2 -right-2"></i>
+                    </div>
+                    <p class="text-white text-sm">Human Control<br><span class="text-orange-200">Human hand + gear</span></p>
+                </div>
+                
+                <div>
+                    <div class="mb-3">
+                        <i class="fas fa-balance-scale text-5xl text-purple-300"></i>
+                    </div>
+                    <p class="text-white text-sm">Ethical Balance<br><span class="text-purple-200">Scale of ethics</span></p>
+                </div>
+                
+                <div>
+                    <div class="mb-3">
+                        <i class="fas fa-code-branch text-5xl text-green-300"></i>
+                    </div>
+                    <p class="text-white text-sm">Path Choice<br><span class="text-green-200">Risk vs Safety</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">The Choice is Ours</h2>
+            <p class="text-xl text-blue-100 mb-6">Building AI that serves humanity requires thoughtful design, ethical frameworks, and collaborative effort</p>
+            <div class="flex justify-center items-center space-x-4">
+                <i class="fas fa-users text-3xl text-white"></i>
+                <span class="text-2xl text-white">+</span>
+                <i class="fas fa-robot text-3xl text-blue-300"></i>
+                <span class="text-2xl text-white">=</span>
+                <i class="fas fa-heart text-3xl text-red-300"></i>
+            </div>
+            <p class="text-lg text-blue-100 mt-4">Humans + AI = Better Future</p>
+        </div>
+        
+    </div>
+</body>
+</html>
