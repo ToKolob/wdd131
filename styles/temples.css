@@ -141,7 +141,7 @@ div p{
   justify-content: center;
   }
   nav a{
-    padding: 2  em;
+    padding: 2em;
   }
   nav.show{
     display: flex;
