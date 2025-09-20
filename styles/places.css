@@ -4,16 +4,19 @@
   --leaf-green: #8ea90e;
   --sand-beige: #ffcf9f;
   --sun-yellow: #FFD700;
+  --font-stilistic: 'DM Serif Text', serif;
+  --font-body: 'Libertinus Serif Display', serif;
 }
 
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-body);
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, var(--blue-sky), var(--sea-turquoise));
 }
 h1, h2, h3 {
+  font-family: var(--font-stilistic);
   font-weight: bold;
 }
 header {
