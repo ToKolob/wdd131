@@ -1,0 +1,86 @@
+:root{
+  --blue-sky: #498ce4;
+  --sea-turquoise: #40E0D0;
+  --leaf-green: #8ea90e;
+  --sand-beige: #ffcf9f;
+  --sun-yellow: #FFD700;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, var(--blue-sky), var(--sea-turquoise));
+}
+h1, h2, h3 {
+  font-weight: bold;
+}
+header {
+  background: var(--blue-sky);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+img{
+  width: 100%;
+}
+#data, #weather {
+  background: rgba(255, 255, 255, 0.7);
+  border: var(--sand-beige) 2px solid;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 8px;
+}
+#weather img{
+  width: 50px;
+  height: 50px;
+}
+footer {
+  background: var(--sea-turquoise);
+  text-align: center;
+  padding: 1em;
+  font-weight: bold;
+}
+#weather h2::after {
+  content: url('../images/places/weather_icon.svg');
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+
+@media screen and (min-width: 600px) {
+  #data, #weather {
+    margin: 2em auto;
+    max-width: 50vw;
+  }  
+  #hero {
+    position: relative;
+  }
+  section {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  #data{
+    top: 100px;
+    left: 10px;
+    max-width: 300px;
+  }
+  #weather{
+    top: calc(100vh - 450px);
+    right: 10px;
+    left: auto; 
+  }
+  main{
+    min-height: 80vh;
+  }
+}
+@media screen and (min-width: 900px) {
+  #data, #weather {
+    max-width: 800px;
+  }  
+}
