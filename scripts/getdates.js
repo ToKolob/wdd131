@@ -7,7 +7,9 @@ document.querySelector("#lastupdated").textContent = `Last Updated: ${lastupdate
 const menunav = document.querySelector("#menu");
 const nav = document.querySelector("nav");
 
-menunav.addEventListener("click", () => {
+if (menunav){
+    menunav.addEventListener("click", () => {
     nav.classList.toggle("show");
     menunav.classList.toggle("show");
 });
+}

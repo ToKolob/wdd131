@@ -38,6 +38,8 @@ img{
 #weather img{
   width: 50px;
   height: 50px;
+  margin-left: auto;
+  margin-right: 10px;
 }
 footer {
   background: var(--sea-turquoise);
@@ -45,20 +47,25 @@ footer {
   padding: 1em;
   font-weight: bold;
 }
-#weather h2::after {
-  content: url('../images/places/weather_icon.svg');
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin-left: 10px;
-  vertical-align: middle;
-}
+
 
 
 @media screen and (min-width: 600px) {
+  #weather h2::after {
+    content: url('../images/places/weather_icon.svg');
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  #weather img{
+    display: none;
+  }
+
   #data, #weather {
     margin: 2em auto;
-    max-width: 50vw;
+    max-width: 55vw;
   }  
   #hero {
     position: relative;
@@ -71,7 +78,6 @@ footer {
   #data{
     top: 100px;
     left: 10px;
-    max-width: 300px;
   }
   #weather{
     top: calc(100vh - 450px);
