@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Daily Journal</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="masthead">
+		<h1>The Daily Journal</h1>
+		<p class="dateline">Today's Highlights</p>
+	</header>
+
+	<main class="front-page">
+		<article class="story">
+			<a class="image-link" href="#">
+				<img src="image1.jpeg">
+			</a>
+			<h2 class="headline">Schools are removing analogue clocks from exam halls as teenager's cannot tell the time</h2>
+		</article>
+
+		<article class="story">
+			<a class="image-link" href="#">
+				<img src="image2.jpg">
+			</a>
+			<h2 class="headline">AI Tool Now Predicts Dreams With 85% Accuracy Using Only Your Sleep Patterns</h2>
+		</article>
+	</main>
+
+	<footer class="footer">
+		<p>&copy; <span id="year"></span> The Daily Journal</p>
+	</footer>
+
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
